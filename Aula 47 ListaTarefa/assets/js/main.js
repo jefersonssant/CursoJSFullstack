@@ -4,6 +4,8 @@ const tarefas = document.querySelector('.tarefas');
 
 function criaLi(){
     const li = document.createElement('li');
+    li.style.listStyle = 'none';
+    li.style.marginLeft = '-45px';
     return li; 
 }
 
@@ -28,9 +30,22 @@ function criaBotaoApagar(li){
     li.appendChild(botaoApagar);
 }
 
+function criaCheckBox(){
+    checkBox = document.createElement('input');
+    checkBox.setAttribute('class', 'checkBoX');
+    checkBox.type = 'checkbox';
+    checkBox.name = 'setBox';
+    checkBox.id = 'setBox';
+    checkBox.checked = false;
+    checkBox.value = 'done';
+    return checkBox;
+}
+
 function criaTarefa(textInput){
     const li = criaLi();
-    li.innerHTML = textInput;
+    const checkBox = criaCheckBox();
+    li.appendChild(checkBox);
+    li.innerHTML += textInput;
     tarefas.appendChild(li);
     limpaInput();
     criaBotaoApagar(li);
@@ -48,6 +63,11 @@ document.addEventListener('click', function(e){
         element.parentElement.remove();
         salvarTarefas();
     }
+
+    if (element.classList.contains('checkBoX')){
+        element.parentElement.style.color = 'red';
+    } 
+    
 });
 
 function salvarTarefas(){
@@ -55,7 +75,7 @@ function salvarTarefas(){
     const listaDeTarefas = [];
 
     for (let tarefa of liTarefas){
-        let tarefaTexto = tarefa.innerText;
+        let tarefaTexto = tarefa.innerHTML;
         tarefaTexto = tarefaTexto.replace('Apagar', '').trim();
         listaDeTarefas.push(tarefaTexto);
     }
