@@ -41,27 +41,16 @@ function criaCheckBox(){
     return checkBox;
 }
 
-// function setColorCheckBox() {
-//     checkBox = criaCheckBox();
-//     if ("input:checkbox:checked") {
-//         return checkBox.parentElement.style.color = 'red';
-//     } else if (!checkBox.checked.false) {
-//         return checkBox.parentElement.style.color = 'black';
-//     }
-// }
-
-
-
 function criaTarefa(textInput){
     const li = criaLi();
     const checkBox = criaCheckBox();
     li.appendChild(checkBox);
     li.innerHTML += textInput;
+    li.style.color = 'black';
     tarefas.appendChild(li);
     limpaInput();
     criaBotaoApagar(li);
     salvarTarefas();
-    //setColorCheckBox();
 }
 
 btnAddTarefa.addEventListener('click', function(){
@@ -77,7 +66,7 @@ document.addEventListener('click', function(e){
         salvarTarefas();
     }
 
-    if (element.classList.contains('checkBoX')){
+    if (element.classList.contains('checkBoX') && element.parentElement.style.color == 'black'){
         element.parentElement.style.color = 'red';
     } else {
         element.parentElement.style.color = 'black';
