@@ -12,7 +12,7 @@
 
 // funcao( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-// function funcao(a, b/*maneira nova quando o argumento não for passado: b = 2, se o argumento de b não for passado b assume valor de 2 */)/*Parâmetros: age como variáveis que recebem os argumentos definidos no chamamento da função*/{
+// function funcao(a, b/*maneira nova quando o argumento não for passado: b = 2, se o argumento de b não for passado b assume valor de 2 */)/*Parâmetros: agem como variáveis que recebem os argumentos definidos no chamamento da função*/{
 //     b = b || 0; //b é igual a b se o argumento for enviado, será 0 quando não for enviado, maneira antiga de resolver
 //     console.log(a + b);
 // }
