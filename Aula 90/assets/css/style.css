@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #788488;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section.container {
+    max-width: 1000px;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 10px;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "Miguel",
+    "email": "miguel@email.com.br",
+    "salario": 27211,
+    "estado": "MG",
+    "empresa": "Facebook",
+    "idade": 34,
+    "sexo": "",
+    "cpf": "362.418.524-18"
+  },
+  {
+    "nome": "Sophia",
+    "email": "sophia@empresa.com.br",
+    "salario": 6971,
+    "estado": "DF",
+    "empresa": "Plasic Co",
+    "idade": 25,
+    "sexo": "F",
+    "cpf": "742.316.671-52"
+  },
+  {
+    "nome": "Davi",
+    "email": "davi@hotmail.com.br",
+    "salario": 10465,
+    "estado": "SC",
+    "empresa": "Facebook",
+    "idade": 51,
+    "sexo": "",
+    "cpf": "725.732.024-10"
+  },
+  {
+    "nome": "Alice",
+    "email": "alice@empresa.com.br",
+    "salario": 39010,
+    "estado": "AL",
+    "empresa": "GGTT",
+    "idade": 46,
+    "sexo": "F",
+    "cpf": "188.944.026-49"
+  }
+]
