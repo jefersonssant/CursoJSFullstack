@@ -1,4 +1,4 @@
-export default class ValidaCPF {
+export default class validaCPF {
   constructor(cpfEnviado) {
     Object.defineProperty(this, 'cpfLimpo', {
       value: cpfEnviado.replace(/\D+/g, ''),
@@ -19,7 +19,7 @@ export default class ValidaCPF {
     this.novoCPF = cpfSemDigitos + digito1 + digito2;
   }
 
-  geraDigito(cpfSemDigitos) {
+  static geraDigito(cpfSemDigitos) {
     let total = 0;
     let reverso = cpfSemDigitos.length + 1;
 
@@ -40,3 +40,5 @@ export default class ValidaCPF {
     return this.novoCPF === this.cpfLimpo;
   }
 }
+
+console.log('Cheguei aqui.');
